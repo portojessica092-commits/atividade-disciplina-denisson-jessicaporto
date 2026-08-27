@@ -2,7 +2,7 @@
          ini_set('display_erros', 1); ini_set('display_startup_erros', 1); erro_reporting(E_ALL);
          
         //verifica se existe conexao com bd,caso nao tenta criar uma nova
-        $conexao = mysqli_connect("localhost","root","") //porta, usuario, senha
+        $conexao = mysqli_connect("localhost","jessica","123456") //porta, usuario, senha
         or die("Erro na conexao com banco de dados");//caso nao consiga conectar mostra a 
                                                     //mensagem de erro mostrada na conexao
 

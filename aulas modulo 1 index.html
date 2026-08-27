@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Completo</title>
+
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+    <h1>Página do Formulário</h1>
+    <h2>Início de Formulário</h2>
+
+    <img src="https://imgs.search.brave.com/..." alt="Imagem">
+
+    <form action="index.html" method="get">
+
+        <!-- Nome -->
+        Digite seu nome completo:<br>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br><br>
+
+        <!-- Email -->
+        Digite seu email:<br>
+        <input type="email" name="email" placeholder="Digite seu email" required><br><br>
+
+        <!-- Telefone -->
+        Telefone:<br>
+        <input type="text" name="telefone" id="telefone"
+        placeholder="(00) 0000-0000"
+        size="20"
+        maxlength="15"><br><br>
+
+        <!-- Botão limpar -->
+        Deseja cancelar?<br>
+        <input type="reset" name="cancelar" value="Limpar"><br><br>
+
+        <!-- Radio -->
+        Selecione o tipo de combustível:<br>
+
+        <input type="radio" name="gas" id="gasolina" value="gasolina">
+        Gasolina<br>
+
+        <input type="radio" name="gas" id="alcool" value="alcool">
+        Álcool<br>
+
+        <input type="radio" name="gas" id="gnv" value="gnv">
+        GNV<br>
+
+        <input type="radio" name="gas" id="flex" value="flex">
+        Flex<br><br>
+
+        <!-- Checkbox -->
+        Selecione os combustíveis que você usa:<br>
+
+        <input type="checkbox" name="combustivel1" id="check_gasolina" value="gasolina">
+        Gasolina<br>
+
+        <input type="checkbox" name="combustivel2" id="check_alcool" value="alcool">
+        Álcool<br>
+
+        <input type="checkbox" name="combustivel3" id="check_gnv" value="gnv">
+        GNV<br>
+
+        <input type="checkbox" name="combustivel4" id="check_flex" value="flex">
+        Flex<br><br>
+
+        <!-- Select -->
+        Escolha uma fabricante:<br>
+
+        <select name="carro" id="carro">
+            <option value="fiat">Fiat</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="byd">BYD</option>
+            <option value="honda">Honda</option>
+        </select>
+
+        <br><br>
+
+        <!-- Textarea -->
+        Sugestões:<br>
+
+        <textarea name="dica" id="dica" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <!-- Botão enviar -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
